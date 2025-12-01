@@ -1,0 +1,213 @@
+2025-12-01T14:53:47.122-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] .n.t.TemplateRestProfissionalApplication : Starting TemplateRestProfissionalApplication using Java 21.0.5 with PID 12716 (C:\Users\marco\Documentos\Nexalty\Integracoes\template_rest_profissional\target\classes started by marcos in C:\Users\marco\Documentos\Nexalty\Integracoes\template_rest_profissional)
+2025-12-01T14:53:47.127-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] .n.t.TemplateRestProfissionalApplication : The following 1 profile is active: "dev"
+2025-12-01T14:53:48.967-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-01T14:53:48.988-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-01T14:53:48.988-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-01T14:53:49.055-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1557 ms
+2025-12-01T14:53:49.193-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === SECURITY CONFIG INICIALIZADO ===
+2025-12-01T14:53:49.193-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : JwtTokenUtil injetado: true
+2025-12-01T14:53:49.197-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === CRIANDO JwtAuthenticationFilter ===
+2025-12-01T14:53:49.199-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : Filter criado: true
+2025-12-01T14:53:49.265-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-01T14:53:49.313-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.config.ContextProperties         : [ContextProperties] - Loaded Commons property source: false, exists: false
+2025-12-01T14:53:49.643-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-12-01T14:53:49.751-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === CONFIGURANDO SECURITY FILTER CHAIN ===
+2025-12-01T14:53:49.751-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : WhiteList: 
+2025-12-01T14:53:49.751-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : CommonsWhiteList: 
+2025-12-01T14:53:49.816-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-01T14:53:49.960-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-12-01T14:53:50.030-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-01T14:53:50.071-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-01T14:53:50.142-03:00 DEBUG 12716 --- [Template Integracao Profissional API REST] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-01T14:53:50.229-03:00  WARN 12716 --- [Template Integracao Profissional API REST] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pathMappedEndpoints' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/WebEndpointAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints]: Factory method 'pathMappedEndpoints' threw exception with message: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/health/autoconfigure/actuate/endpoint/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2025-12-01T14:53:50.237-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-01T14:53:50.260-03:00  INFO 12716 --- [Template Integracao Profissional API REST] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-01T14:53:50.279-03:00 ERROR 12716 --- [Template Integracao Profissional API REST] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pathMappedEndpoints' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/WebEndpointAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints]: Factory method 'pathMappedEndpoints' threw exception with message: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/health/autoconfigure/actuate/endpoint/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:983) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:454) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1374) ~[spring-boot-4.0.0.jar:4.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-4.0.0.jar:4.0.0]
+	at br.com.nexalty.template_rest_profissional.TemplateRestProfissionalApplication.main(TemplateRestProfissionalApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints]: Factory method 'pathMappedEndpoints' threw exception with message: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/health/autoconfigure/actuate/endpoint/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/health/autoconfigure/actuate/endpoint/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1268) ~[spring-context-7.0.1.jar:7.0.1]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.lambda$createEndpointBean$0(EndpointDiscoverer.java:167) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer$EndpointBean.getBean(EndpointDiscoverer.java:519) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.lambda$getFilterEndpoint$0(EndpointDiscoverer.java:378) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[na:na]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getFilterEndpoint(EndpointDiscoverer.java:378) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isFilterMatch(EndpointDiscoverer.java:332) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isExtensionExposed(EndpointDiscoverer.java:286) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.addExtensionBean(EndpointDiscoverer.java:194) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.addExtensionBeans(EndpointDiscoverer.java:181) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:142) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:134) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints.lambda$getEndpoints$0(PathMappedEndpoints.java:71) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:833) ~[na:na]
+	at org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints.getEndpoints(PathMappedEndpoints.java:71) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints.<init>(PathMappedEndpoints.java:66) ~[spring-boot-actuator-4.0.0.jar:4.0.0]
+	at org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration.pathMappedEndpoints(WebEndpointAutoConfiguration.java:119) ~[spring-boot-actuator-autoconfigure-4.0.0.jar:4.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 53 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:2008) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1971) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanMap(DefaultListableBeanFactory.java:1894) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1836) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 67 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 85 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleAutowireCandidateResolver.resolveAutowireCandidates(SimpleAutowireCandidateResolver.java:104) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.boot.jdbc.autoconfigure.health.DataSourceHealthContributorAutoConfiguration.dbHealthContributor(DataSourceHealthContributorAutoConfiguration.java:93) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 88 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.1.jar:7.0.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 102 common frames omitted
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:102) ~[spring-core-7.0.1.jar:7.0.1]
+	at org.springframework.boot.jdbc.autoconfigure.DataSourceProperties.findDriverClassName(DataSourceProperties.java:187) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at org.springframework.boot.jdbc.autoconfigure.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:177) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at org.springframework.boot.jdbc.autoconfigure.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:51) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at org.springframework.boot.jdbc.autoconfigure.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:63) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at org.springframework.boot.jdbc.autoconfigure.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:128) ~[spring-boot-jdbc-4.0.0.jar:4.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.1.jar:7.0.1]
+	... 105 common frames omitted
+
+2025-12-01T14:55:16.967-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] .n.t.TemplateRestProfissionalApplication : Starting TemplateRestProfissionalApplication using Java 21.0.5 with PID 28372 (C:\Users\marco\Documentos\Nexalty\Integracoes\template_rest_profissional\target\classes started by marcos in C:\Users\marco\Documentos\Nexalty\Integracoes\template_rest_profissional)
+2025-12-01T14:55:16.973-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] .n.t.TemplateRestProfissionalApplication : The following 1 profile is active: "dev"
+2025-12-01T14:55:18.825-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-01T14:55:18.851-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-01T14:55:18.851-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-01T14:55:18.925-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1609 ms
+2025-12-01T14:55:19.110-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === SECURITY CONFIG INICIALIZADO ===
+2025-12-01T14:55:19.111-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : JwtTokenUtil injetado: true
+2025-12-01T14:55:19.114-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === CRIANDO JwtAuthenticationFilter ===
+2025-12-01T14:55:19.116-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : Filter criado: true
+2025-12-01T14:55:19.186-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-01T14:55:19.247-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.config.ContextProperties         : [ContextProperties] - Loaded Commons property source: false, exists: false
+2025-12-01T14:55:19.630-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-12-01T14:55:19.743-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : === CONFIGURANDO SECURITY FILTER CHAIN ===
+2025-12-01T14:55:19.743-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : WhiteList: 
+2025-12-01T14:55:19.743-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] b.c.n.t.security.SecurityConfig          : CommonsWhiteList: 
+2025-12-01T14:55:19.803-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-01T14:55:19.931-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2025-12-01T14:55:19.974-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-01T14:55:20.003-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-01T14:55:20.069-03:00 DEBUG 28372 --- [Template Integracao Profissional API REST] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-01T14:55:20.153-03:00  WARN 28372 --- [Template Integracao Profissional API REST] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'pathMappedEndpoints' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/web/WebEndpointAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.PathMappedEndpoints]: Factory method 'pathMappedEndpoints' threw exception with message: Error creating bean with name 'healthEndpoint' defined in class path resource [org/springframework/boot/health/autoconfigure/actuate/endpoint/HealthEndpointConfiguration.class]: Unsatisfied dependency expressed through method 'healthEndpoint' parameter 0: Error creating bean with name 'healthContributorRegistry' defined in class path resource [org/springframework/boot/health/autoconfigure/registry/HealthContributorRegistryAutoConfiguration.class]: Unsatisfied dependency expressed through method 'healthContributorRegistry' parameter 0: Error creating bean with name 'dbHealthContributor' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/health/DataSourceHealthContributorAutoConfiguration.class]: Failed to instantiate [org.springframework.boot.health.contributor.HealthContributor]: Factory method 'dbHealthContributor' threw exception with message: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-12-01T14:55:20.161-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-01T14:55:20.184-03:00  INFO 28372 --- [Template Integracao Profissional API REST] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-01T14:55:20.201-03:00 ERROR 28372 --- [Template Integracao Profissional API REST] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
